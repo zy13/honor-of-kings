@@ -12,6 +12,7 @@ document.querySelector('.sub').onclick = function() {
   renderHeroes(game?.player?.heroes) // 可选链式操作
 }
 
+// 渲染英雄
 function renderHeroes(heroes) {
   document.querySelector('.heroView').innerHTML = ''
   heroes.forEach(hero => {
@@ -28,6 +29,7 @@ function renderHeroes(heroes) {
   })
 }
 
+// 渲染技能
 function renderSkills(skills) {
   document.querySelector('.skillsView').innerHTML = ''
   skills.forEach(skill => {
@@ -37,6 +39,7 @@ function renderSkills(skills) {
   })
 }
 
+// 渲染皮肤
 function renderSkins(skins) {
   console.log(skins)
   document.querySelector('.skinView').innerHTML = ''

@@ -4,13 +4,16 @@ import Skill3 from '../skills/luban/s3.js'
 import Skin1 from '../skins/luban/s1.js'
 import Skin2 from '../skins/luban/s2.js'
 import Skin3 from '../skins/luban/s3.js'
+import Hero from './hero.js'
 
-
-export default class Luban{
+export default class Luban extends Hero{
   constructor() {
-    this.name = '鲁班'
-    this.ico = './sources/heroes/luban1.png'
-    this.skills = [new Skill1(), new Skill2(), new Skill3()]
-    this.skins = [new Skin1(), new Skin2(), new Skin3()]
+    let opts = {
+      name: '鲁班',
+      ico: './sources/heroes/luban1.png',
+      skills: [new Skill1(), new Skill2(), new Skill3()],
+      skins: [new Skin1(), new Skin2(), new Skin3()]
+    }
+    super(opts)
   }
 }
